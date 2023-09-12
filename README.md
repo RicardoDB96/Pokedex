@@ -3,7 +3,7 @@ An application where I practice the main concepts of Android, con tematica de Po
 En esta aplicación ire aplicando los nuevos conocimientos y tecnologias que vaya aprendiendo relacionadas con el desarrollo Android y lo relacionado a ello.
 
 ## Screenshots
-![Home](screenshots/1.png)
+![Home](screenshots/1.jpeg)
 
 ## Technologies Used
 
