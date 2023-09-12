@@ -1,6 +1,6 @@
 # Pokedex
-An application where I practice the main concepts of Android, con tematica de Pokémon.
-En esta aplicación ire aplicando los nuevos conocimientos y tecnologias que vaya aprendiendo relacionadas con el desarrollo Android y lo relacionado a ello.
+An application with a Pokémon theme where I practice the main concepts of Android. 
+In this app, I will apply the new knowledge and technologies I learn related to Android development and everything associated with it.
 
 ## Screenshots
 | Home |
