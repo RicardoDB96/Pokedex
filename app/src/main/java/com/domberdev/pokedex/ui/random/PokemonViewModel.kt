@@ -1,4 +1,4 @@
-package com.domberdev.pokedex.ui.viewmodel
+package com.domberdev.pokedex.ui.random
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -37,7 +37,7 @@ class PokemonViewModel @Inject constructor(
             isLoading.postValue(true)
             val pkm = getRandomPokemonUseCase()
             if (pkm != null) {
-                pokemonModel.postValue(pkm)
+                pokemonModel.postValue(pkm!!)
             }
             isLoading.postValue(false)
         }
