@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Pokédex</string>
+
+    <!--BottomBar-->
+    <string name="pokedex">Pokedex</string>
+    <string name="random">Random</string>
+
+    <!--Pokedex-->
+    <!--Random-->
+    <!--_-->
+
 </resources>

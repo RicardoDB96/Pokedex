@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.domberdev.pokedex"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.domberdev.pokedex"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,11 +39,14 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    kotlin {
+        jvmToolchain(8)
+    }
 }
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -53,13 +56,22 @@ dependencies {
     // Activity
     implementation("androidx.activity:activity-ktx:1.7.2")
     // ViewModel
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     // LiveData
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+
+    //NavComponent
+    val navVersion = "2.7.2"
+
+    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+
 
     // Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    val retrofitVersion = "2.9.0"
+
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
 
     //Corrutinas
     val coroutineVersion = "1.6.4"
@@ -69,7 +81,6 @@ dependencies {
 
     // Picasso
     implementation("com.squareup.picasso:picasso:2.8")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
 
     // Dagger Hilt
     val hiltVersion = "2.46.1"
@@ -87,6 +98,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     testImplementation("io.mockk:mockk:1.13.7")
     testImplementation("androidx.arch.core:core-testing:2.2.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }

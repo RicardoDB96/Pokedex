@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/pokedexFragment">
+
+    <fragment
+        android:id="@+id/randomPokemonFragment"
+        android:name="com.domberdev.pokedex.ui.random.RandomPokemonFragment"
+        android:label="fragment_random_pokemon"
+        tools:layout="@layout/fragment_random_pokemon" />
+    <fragment
+        android:id="@+id/pokedexFragment"
+        android:name="com.domberdev.pokedex.ui.pokedex.PokedexFragment"
+        android:label="fragment_pokedex"
+        tools:layout="@layout/fragment_pokedex" />
+</navigation>

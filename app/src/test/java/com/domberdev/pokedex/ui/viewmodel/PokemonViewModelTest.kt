@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.domberdev.pokedex.domain.GetPokemonUseCase
 import com.domberdev.pokedex.domain.GetRandomPokemonUseCase
 import com.domberdev.pokedex.domain.model.Pokemon
+import com.domberdev.pokedex.ui.random.PokemonViewModel
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.RelaxedMockK
