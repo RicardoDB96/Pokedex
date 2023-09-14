@@ -6,19 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".ui.random.RandomPokemonFragment">
 
+    <ImageView
+        android:id="@+id/ivPokemon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="Pokemon image"
+        android:src="@drawable/ic_pokeball"
+        app:layout_constraintBottom_toTopOf="@+id/tvName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
     <TextView
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:gravity="center"
         android:padding="16dp"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:text="Rayquaza" />
 
     <TextView
