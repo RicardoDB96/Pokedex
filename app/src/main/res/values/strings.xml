@@ -2,10 +2,11 @@
     <string name="app_name">Pokédex</string>
 
     <!--BottomBar-->
-    <string name="pokedex">Pokedex</string>
+    <string name="pokedex">Pokédex</string>
     <string name="random">Random</string>
 
-    <!--Pokedex-->
+    <!--Pokédex-->
+    <string name="pokemon_number">#%1$d</string>
     <!--Random-->
     <!--_-->
 

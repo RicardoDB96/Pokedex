@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.domberdev.pokedex.R
 import com.domberdev.pokedex.databinding.FragmentRandomPokemonBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,7 +26,7 @@ class RandomPokemonFragment : Fragment() {
         // Ponemos la información de los Pokemon en sus TextViews
         pokemonViewModel.pokemonModel.observe(viewLifecycleOwner) { pkm ->
             binding.tvName.text = pkm.name.replaceFirstChar { it.uppercase() }
-            binding.tvNumber.text = pkm.id.toString()
+            binding.tvNumber.text = getString(R.string.pokemon_number, pkm.id)
         }
         pokemonViewModel.isLoading.observe(viewLifecycleOwner) {
             binding.progress.isVisible = it
@@ -44,5 +45,10 @@ class RandomPokemonFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentRandomPokemonBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
