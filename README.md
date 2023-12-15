@@ -3,9 +3,9 @@ An application with a Pokémon theme where I practice the main concepts of Andro
 In this app, I will apply the new knowledge and technologies I learn related to Android development and everything associated with it.
 
 ## Screenshots
-| Home |
-| --- |
-| ![Home](screenshots/1.jpeg) |
+| Pokédex                             | Random                            |
+|-------------------------------------|-----------------------------------|
+| ![Pokédex](screenshots/Pokedex.jpg) | ![Random](screenshots/Random.jpg) |
 
 ## Technologies Used
 
