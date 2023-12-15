@@ -5,6 +5,16 @@
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorPrimaryDark">@color/background</item>
         <item name="colorSecondaryContainer">@color/background</item>
-        <item name="backgroundTint">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textViewStyle">@style/TexViewViewStyle</item>
+        <item name="cardViewStyle">@style/CardViewStyleDark</item>
+    </style>
+
+    <style name="TexViewViewStyle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CardViewStyleDark" parent="@style/CardViewStyle">
+        <item name="cardBackgroundColor">@color/accent</item>
     </style>
 </resources>
